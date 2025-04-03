@@ -1,0 +1,79 @@
+agents:
+-   start: [3, 8]
+    name: agent0
+-   start: [5, 8]
+    name: agent1
+-   start: [7, 8]
+    name: agent2
+
+map:
+    dimensions: [11, 11]
+    obstacles:
+    - !!python/tuple [2, 2]
+    - !!python/tuple [2, 3]
+    - !!python/tuple [2, 4]
+    - !!python/tuple [2, 5]
+    - !!python/tuple [2, 6]
+    - !!python/tuple [3, 2]
+    - !!python/tuple [3, 3]
+    - !!python/tuple [3, 4]
+    - !!python/tuple [3, 5]
+    - !!python/tuple [3, 6]
+    - !!python/tuple [7, 2]
+    - !!python/tuple [7, 3]
+    - !!python/tuple [7, 4]
+    - !!python/tuple [7, 5]
+    - !!python/tuple [7, 6]
+    - !!python/tuple [8, 2]
+    - !!python/tuple [8, 3]
+    - !!python/tuple [8, 4]
+    - !!python/tuple [8, 5]
+    - !!python/tuple [8, 6]
+    - !!python/tuple [1, 2]
+    - !!python/tuple [1, 4]
+    - !!python/tuple [1, 6]
+    - !!python/tuple [4, 2]
+    - !!python/tuple [4, 4]
+    - !!python/tuple [4, 6]
+    - !!python/tuple [6, 2]
+    - !!python/tuple [6, 4]
+    - !!python/tuple [6, 6]
+    - !!python/tuple [9, 2]
+    - !!python/tuple [9, 4]
+    - !!python/tuple [9, 6]
+#task table without taskpoint
+    - !!python/tuple [3, 9]
+    - !!python/tuple [3, 10]
+    - !!python/tuple [4, 9]
+    - !!python/tuple [4, 10]
+    - !!python/tuple [5, 9]
+    - !!python/tuple [5, 10]
+    - !!python/tuple [6, 9]
+    - !!python/tuple [6, 10]
+    - !!python/tuple [7, 9]
+    - !!python/tuple [7, 10]
+
+
+    non_task_endpoints:
+    - !!python/tuple [3, 8]
+    - !!python/tuple [5, 8]
+    - !!python/tuple [7, 8]
+
+tasks:
+-   start_time: 0
+    start: [4, 5]
+    goal: [3, 8]
+    task_name: task0
+-   start_time: 0
+    start: [6, 5]
+    goal: [5, 8]
+    task_name: task1
+-   start_time: 0
+    start: [4, 3]
+    goal: [7, 8]
+    task_name: task2
+
+delays:
+    agent0: [58, 65, 66, 67 60, 32, 46, 49, 50, 75, 89, 10, 23, 24]
+    agent1: [37, 82, 27, 46, 62, 2, 3, 4, 5 69, 41, 68, 56, 57, 58]
+    agent2: [20, 21, 22, 70, 48, 98, 78, 88, 24, 40, 71, 72, 73, 2]
